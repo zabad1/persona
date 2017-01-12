@@ -12,12 +12,19 @@
 		<!-- Paragraph 3-->
 		<h3>Here is two examples of different movies, one being a highly popular movie that has a lot of triva and the second example having very little triva added to it.</h3>
 		<!-- Links to movie triva-->
+				<img src="Images/madmaxfuryroad.jpg" width="450"; height="250";>
+				<br>
 				<a href="http://www.imdb.com/title/tt1392190/trivia?ref_=tt_ql_2"> Mad Max: Fury Road</a>
+				<br>
+				<br>
+				<br>
+				<img src="Images/theAdventuresofPrinceAchmed.jpg" width="450"; height="250">
 				<br>
 				<a href="http://www.imdb.com/title/tt0015532/trivia?ref_=tt_ql_2"> The Adventures of Prince Achmed</a>
 		<br>
 		<br>
 		<br>
+		<h3> Me enjoying my Costco size wine bottle.</h3>
 		<img src="Images/IMG_5040.JPG" alt="Drinking my Costco size wine bottle" style="width: 350px; height: 500px">
 	</body>
 </html>
