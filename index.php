@@ -46,7 +46,9 @@
 		</ol>
 		<table>
 			<p><h1>Profile</h1></p>
-			<th></th>
+			<th>
+
+			</th>
 		</table>
 	</body>
 </html>
