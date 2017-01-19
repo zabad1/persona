@@ -4,12 +4,18 @@
 	<title>Zak Abad Persona</title>
 </head>
 	<body>
-		<h1> Name:
 			<br>
-			<img src="Images/IMG_5040.JPG" alt="Drinking my Costco size wine bottle" style="float:right;width:250px; height:350px";>
-		Age:
+			<img src="Images/IMG_5040.JPG" alt="Drinking my Costco size wine bottle" style="float:right;width:250px; height:350px">
+			<ul style="list-style-type:disc">
+				<li>Name:Clifford Wood-Buck a.k.a. Sponge</li>
+				<li>Age:132.9 Mercurian Years (that's according to Mercury)</li>
+				<li>Occupation:Raging Alcoholic & Pie Eating Contestant Winner</li>
+				<li>Needs:Clifford has made a full-time living as a pie eating contestant, so he can fuel his alcohol drinking hobby through the week. </li>
+				<br>
+				<li>Goals</li>
+				<br>
+			</ul>
 			<br>
-		Occupation: Cinema Nerd</h1>
 		<!-- Persona-->
 		<h3> </h3>
 		<!-- Case-->
