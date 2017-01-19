@@ -4,18 +4,18 @@
 	<title>Zak Abad Persona</title>
 </head>
 	<body>
-		<h1> Name: Zak Abad
+		<h1> Name:
 			<br>
 			<img src="Images/IMG_5040.JPG" alt="Drinking my Costco size wine bottle" style="float:right;width:250px; height:350px";>
-		Age: 32
+		Age:
 			<br>
 		Occupation: Cinema Nerd</h1>
 		<!-- Persona-->
-		<h3>As person that is very fond of cinema. I enjoy going on to IMDB to look up films and resumes. Things that I enjoy that I look up is qoutes, triva, filming locations, and soundtracks. For any person that is slightly interested in a certain show, movie, or person. IMDB is a great site to find that infromation. </h3>
+		<h3> </h3>
 		<!-- Case-->
-		<h3>All though I love reading about triva and other things on IMDB. I need to put a stop to the useless triva information that other users put on the site. I must hack IMDB and become the main host so that no one can put useless information on it.</h3>
+		<h3>.</h3>
 		<!--Examples of bad triva-->
-		<h3>Here is two examples of different movies, one being a highly popular movie that has a lot of triva and the second example having very little triva added to it.</h3>
+		<h3></h3>
 		<br>
 		<br>
 		<br>
@@ -40,7 +40,6 @@
 		<!-- Interaction flow-->
 		<ol>1)Turns on comupter
 			<br>
-			2)Starts hacking Server
 			<br>
 			3)Gets in the server and becomes the main host
 		</ol>
