@@ -16,5 +16,21 @@ CREATE TABLE profile (
 --enitity movie--
 
 CREATE TABLE movie (
+		quotes VARCHAR(1000)  NOT NULL,
+		awards VARCHAR(1000)  NOT NULL,
+		userReviewDate DATETIME NOT NULL,
+		userReview VARCHAR(10000) NOT NULL,
+		synopsis VARCHAR(140) NOT NULL,
+		title VARCHAR(140) NOT NULL,
+		castCrew VARCHAR(10000) NOT NULL,
+		INDEX(movieId),
+		FOREIGN KEY(authorProfileId) REFERENCES profile(profileId),
+		PRIMARY KEY(movieId
+
+);
+
+--enitity triva--
+
+CREATE TABLE triva (
 
 )
