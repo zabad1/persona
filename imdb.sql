@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS triva;
+DROP TABLE IF EXISTS trivia;
 DROP TABLE IF EXISTS movie;
 DROP TABLE IF EXISTS profile;
 
@@ -33,13 +33,13 @@ CREATE TABLE movie (
 -- enitity triva--
 
 CREATE TABLE triva (
-		trivaId INT UNSIGNED NOT NULL,
+		triviaId INT UNSIGNED NOT NULL,
 		movieId INT UNSIGNED NOT NULL,
 		movieTitle VARCHAR(5000) NOT NULL,
-		trival VARCHAR(5000) NOT NULL,
-		INDEX (trivaId),
+		trivial VARCHAR(5000) NOT NULL,
+		INDEX (triviaId),
 		INDEX (movieId),
 		FOREIGN KEY (movieId) REFERENCES profile(profileId),
-		PRIMARY Key (trivaId)
+		PRIMARY Key (triviaId)
 
 );
