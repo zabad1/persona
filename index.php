@@ -10,9 +10,9 @@
 				<li>Name:Clifford Wood-Buck a.k.a. Sponge</li>
 				<li>Age:132.9 Mercurian Years (that's according to Mercury)</li>
 				<li>Occupation:Raging Alcoholic & Pie Eating Contestant Winner</li>
-				<li>Needs:Clifford has made a full-time living as a pie eating contestant, so he can fuel his alcohol drinking hobby through the week. </li>
-				<br>
-				<li>Goals</li>
+				<li>Needs:Clifford has made a full-time living as a pie eating contestant, so he can fuel his alcohol drinking hobby through the week. Losing one contest can reduce the amount of aclohol he needs for the next weekend contest. If that happens, Clifford listens to Katy Perry music the whole week to motivate him to win the next contest.
+				</li>
+				<li>Goals: </li>
 				<br>
 			</ul>
 			<br>
