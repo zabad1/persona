@@ -111,7 +111,7 @@ class Movie {
 		}
 
 		//convert and store the movie id
-		this->$newMovieId;
+		$this->$newMovieId;
 	}
 	/**
 	 * accessor method for trivia id
@@ -129,7 +129,7 @@ class Movie {
 	 *mutator method for tweet profile id
 	 *
 	 * @param int $newTriviaId new value of trivia id
-	 * @throws \RangeExceptionif $newTriviaId is not positive
+	 * @throws \RangeException if $newTriviaId is not positive
 	 * @throws \TypeError if $newTriviaId is not an integer
 	 **/
 
@@ -198,18 +198,6 @@ class Movie {
  * @return int value of trivial
  **/
 
-public function getTrivial() {
-			return($this->trivial);
-}
-
-/**
- * mutator method for trivial
- *
- * @param int $newTrivial new value of trivial
- * @throws \RangeException if $newTrivial is not positive
- * @throws \TypeError if $newTrivial is not an integer
- **/
-
 	public function setquotes(int $quotes = null)
 		//base case: if the quotes is null, this a new quotes without a mySQL assigned (yet)
 		if($newQuotes === null) {
@@ -268,7 +256,7 @@ public function getQuotes() {
 		}
 
 		//convert and store the synopsis
-		this->$newsynopsis;
+		$this->$newsynopsis;
 	}
 	/**
 	 * accessor method for synopsis
@@ -347,4 +335,38 @@ public function getcastCrew() {
  * @param int $newcastCrew new value of castCrew
  * @throws \RangeException if $newcastCrew is not positive
  * @throws \TypeError if $newcastCrew is not an integer
+ **/
+
+public function getMovieId() {
+			return($this->movieId);
+}
+
+/**
+ * mutator method for movie id
+ *
+ * @param int|null $newMovieId new value of movie id
+ * @throws \RangeException if $newMovieId is not positive
+ * @throws \TypeError if $newMovieId is not an integer
+ **/
+
+public function setMovieId(int $newMovieId = null) {
+	//base case: if the movie id is null, this a new movie id without a mySQL assigned
+	if($newMovieId === null) {
+			$this->movieId = null;
+			return;
+	}
+
+	//verify the movie id is positive
+	if($newMovieId <= 0) {
+			throw(new \RangeException("movie id is not positive"));
+	}
+
+	//convert and store the movie id
+	$this->movieId = $newMovieId;
+}
+
+/**
+ * accessor method for movie id
+ *
+ * @return int value of movie id
  **/
