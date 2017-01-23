@@ -163,6 +163,53 @@ class Movie {
 	 * @throws \TypeError if $newMovieTitle is not an integer
 	 **/
 
+	public funtion getTrivial() {
+				return($this->trivial);
+
+}
+
+/**
+ * mutator method for trivial
+ *
+ * @param int|null $newTrivial new value of trivial
+ * @throws \RangeException if $newTrivial is not positive
+ * @throws \TypeError if $newTrivial is not an integer
+ **/
+
+	public function setTrivial(int $newTrivial = null) {
+		//base case: if the trivial is null, this a new trivial without a mySQL assigned
+		if($newTrivial === null) {
+				$this->trivial = null;
+				return;
+		}
+
+		//verify the trivial is positive
+		if($newTrivial <= 0) {
+				throw(new \RangeException("trivial is not positive"));
+		}
+
+		//convert and store the trivial
+	$this->trivial = $newTrivial;
+}
+
+/**
+ * accessor method for trivial profile
+ *
+ * @return int value of trivial
+ **/
+
+public function getTrivial() {
+			return($this->trivial);
+}
+
+/**
+ * mutator method for trivial
+ *
+ * @param int $newTrivial new value of trivial
+ * @throws \RangeException if $newTrivial is not positive
+ * @throws \TypeError if $newTrivial is not an integer
+ **/
+
 	public function setquotes(int $quotes = null)
 		//base case: if the quotes is null, this a new quotes without a mySQL assigned (yet)
 		if($newQuotes === null) {
