@@ -163,37 +163,37 @@ class Movie {
 	 * @throws \TypeError if $newMovieTitle is not an integer
 	 **/
 
-	public function setTrivial(int $trivial = null)
-		//base case: if the trivial is null, this a new trivial without a mySQL assigned (yet)
-		if($newTrivial === null) {
-			$this->trivial = null;
+	public function setquotes(int $quotes = null)
+		//base case: if the quotes is null, this a new quotes without a mySQL assigned (yet)
+		if($newQuotes === null) {
+			$this->quotes = null;
 			return;
 		}
 
-		//verify the trivial is positive
-		if($newTrivial <= 0) {
-				throw (new \RangeException("trivial is not positive"));
+		//verify the quotes is positive
+		if($newQuotes <= 0) {
+				throw (new \RangeException("quotes is not positive"));
 	}
 
-	//convert and store the trivial
-	$this->trivial = $newTrivial;
+	//convert and store the quotes
+	$this->quotes = $newQuotes;
 }
 /**
- * accessor method for trivial method
+ * accessor method for quotes method
  *
- *@return int value of trivial
+ *@return int value of quotes
  **/
-public function getTrival() {
-	return($this->trivial);
+public function getQuotes() {
+	return($this->quotes);
 
 }
 
 /**
- * mutator method for trivial
+ * mutator method for quotes
  *
- * @param int $newTrivial new value of trivial
- * @throws \RangeException if $newTrivial is not positive
- * @throws \TypeError if $newTrivial is not an integer
+ * @param int $newQuotes new value of quotes
+ * @throws \RangeException if $newQuotes is not positive
+ * @throws \TypeError if $newQuotes is not an integer
  **/
 
 	public function getawards() {
@@ -237,7 +237,7 @@ public function getTrival() {
 	 *mutator method for synopsis profile id
 	 *
 	 * @param int $newsynopsis new value of synopsis
-	 * @throws \RangeExceptionif $newsynopsis is not positive
+	 * @throws \RangeException if $newsynopsis is not positive
 	 * @throws \TypeError if $newsynopsis is not an integer
 	 **/
 
@@ -269,7 +269,7 @@ public function getTrival() {
 	 * @throws \TypeError if $newtitle is not an integer
 	 **/
 
-	public function setcastCrew(int $castCrew = null)
+	public function setcastCrew(int $newcastCrew = null)
 		//base case: if the castCrew is null, this a new castCrew without a mySQL assigned (yet)
 		if($newcastCrew === null) {
 			$this->castCrew = null;
