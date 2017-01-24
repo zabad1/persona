@@ -217,20 +217,20 @@ public function getTriviaid() {
  * @throws \TypeError if $newTriviaId is not an integer
  **/
 
-public function setquotes(int $quotes = null)
+public function setQuotes(int $quotes = null)
 		//base case: if the quotes is null, this a new quotes without a mySQL assigned (yet)
-		if($newQuotes === null) {
+		if($newquotes === null) {
 			$this->quotes = null;
 			return;
 		}
 
 		//verify the quotes is positive
-		if($newQuotes <= 0) {
+		if($newquotes <= 0) {
 			throw (new \RangeException("quotes is not positive"));
 		}
 
 	//convert and store the quotes
-	$this->quotes = $newQuotes;
+	$this->quotes = $newquotes;
 }
 /**
  * accessor method for quotes method
@@ -252,18 +252,18 @@ public function getQuotes() {
 
 	public function setawards(int $awards = null)
 		//base case: if the awards is null, this a new awards without a mySQL assigned (yet)
-		if($newQuotes === null) {
-			$this->quotes = null;
+		if($newawards === null) {
+			$this->awards = null;
 			return;
 		}
 
 		//verify the awards is positive
-		if($newAwards <= 0) {
+		if($newawards <= 0) {
 			throw (new \RangeException("awards is not positive"));
 		}
 
 	//convert and store the awards
-	$this->awards = $newAwards;
+	$this->awards = $newawards;
 	}
 
 /**accessor method for awards method
