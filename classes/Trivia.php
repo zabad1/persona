@@ -101,17 +101,15 @@ class Movie {
 		$this->$newMovieId;
 	}
 	/**
-	 * accessor method for trivia id
+	 * accessor method for movie id
 	 *
-	 * @return int value of trivia id
+	 * @return int value of movie id
 	 **/
-	/**
-	 * @return int
-	 */
 
 	public function getmovieId() {
 		return ($this->movieId);
 	}
+
 
 	/**
 	 * mutator method for movie id
@@ -138,9 +136,7 @@ class Movie {
 	 *
 	 * @return int value of movie title
 	 **/
-	/**
-	 * @return mixed
-	 */
+
 	public function getMovieTitle() {
 		return ($this->movieTitle);
 	}
@@ -176,7 +172,7 @@ public function setTrivial(int $newTrivial = null) {
  **/
 
 	public funtion getTrivial() {
-				return($this->trivial);
+		return($this->trivial);
 }
 
 /**
@@ -206,7 +202,19 @@ public function setTriviaId (int $newTriviaId = null) {
 /**
  * accessor method for triviaId profile
  *
- * @return int value of trivial
+ * @return int value of triviaId
+ **/
+
+public function getTriviaid() {
+		return($this->triviaId);
+}
+
+/**
+ * mutator method for trivia id
+ *
+ * @param int|null $newTriviaId new value of trivia id
+ * @throws \RangeException if $newTriviaId is not positive
+ * @throws \TypeError if $newTriviaId is not an integer
  **/
 
 public function setquotes(int $quotes = null)
@@ -400,4 +408,38 @@ public function getMovieId() {
  * @param int|null $newMovieId new value of movie id
  * @throws \RangeException if $newMovieId is not positive
  * @throws \TypeError if $newMovieId is not an integer
+ **/
+
+public function setAuthorProfileId(int $newAuthorId = null) {
+	//base case: if the author profile id is null, this a new author profile id without a mySQL assigned
+	if($newAuthorId === null) {
+		this->authorId = null;
+		return;
+	}
+
+	//verify the author profile id is positive
+	if ($newAuthorId <= 0) {
+		throw(new \RangeException("author profile id is not positivve"));
+	}
+
+	//convert and store the author profile id
+	$this->authorProfileId = $newAuthorId;
+}
+
+/**
+ * accessor method for author profile id
+ *
+ * @return int value of author profile id
+ **/
+
+public function getAuthorProfileId() {
+	return($this->authorProfileId);
+}
+
+/**
+ * mutator method for author profile id
+ *
+ * @param int|null $newAuthorProfileId new value of author profile id
+ * @throws \RangeException if $newAuthorProfileId is not positive
+ * @throws \TypeError if $newAuthorProfileId is not an integer
  **/
