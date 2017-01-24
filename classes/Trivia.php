@@ -86,19 +86,6 @@ class Movie {
 	 * @throws \Exception if some other exception occurs
 	 **/
 
-	public function getmovieId() {
-		return ($this->movieId);
-
-	}
-
-	/**
-	 * mutator method for movie id
-	 *
-	 * @param int|null $newMovieId new value of movie id
-	 * @throws \RangeException if $newMovieId is not positive
-	 * @throws \TypeError if $newMovieId is not an integer
-	 *
-	 **/
 	public function setMovieId(int $newMovieId = null) {
 		//base case: if the movie id is null, this is new movie without a mySQL assigned
 		if($newMovieId === null) {
@@ -121,21 +108,24 @@ class Movie {
 	/**
 	 * @return int
 	 */
-	public function getTriviaId(): int {
-		return($this->triviaId);
+
+	public function getmovieId() {
+		return ($this->movieId);
 	}
 
 	/**
-	 *mutator method for tweet profile id
+	 * mutator method for movie id
 	 *
-	 * @param int $newTriviaId new value of trivia id
-	 * @throws \RangeException if $newTriviaId is not positive
-	 * @throws \TypeError if $newTriviaId is not an integer
-	 **/
+	 * @param int|null $newMovieId new value of movie id
+	 * @throws \RangeException if $newMovieId is not positive
+	 * @throws \TypeError if $newMovieId is not an integer
+	public function getTriviaId(): int {
+		return ($this->triviaId);
+	}
 
-	public function setMovieTitle(int $newMovieTitle = null){
+	public function setMovieTitle(int $newMovieTitle = null) {
 		//base case: if movie title is null, this a new movie title without a mySQL assigned id (yet)
-		if($newMovieTitle === null){
+		if($newMovieTitle === null) {
 			throw(new \RangeException("movie title is not positive"));
 		}
 
@@ -163,9 +153,30 @@ class Movie {
 	 * @throws \TypeError if $newMovieTitle is not an integer
 	 **/
 
+public function setTrivial(int $newTrivial = null) {
+	//base case: if the trivial is null, this a new trivial without a mySQL assigned
+	if($newTrivial === null) {
+		$this->trivial = null;
+		return;
+	}
+
+	//verify the trivial is positive
+	if($newTrivial <= 0) {
+		throw(new \RangeException("trivial is not positive"));
+	}
+
+	//convert and store the trivial
+	$this->trivial = $newTrivial;
+}
+
+/**
+ * accessor method for trivial profile
+ *
+ * @return int value of trivial
+ **/
+
 	public funtion getTrivial() {
 				return($this->trivial);
-
 }
 
 /**
@@ -176,29 +187,29 @@ class Movie {
  * @throws \TypeError if $newTrivial is not an integer
  **/
 
-	public function setTrivial(int $newTrivial = null) {
-		//base case: if the trivial is null, this a new trivial without a mySQL assigned
-		if($newTrivial === null) {
-				$this->trivial = null;
-				return;
-		}
+public function setTriviaId (int $newTriviaId = null) {
+	//base case: if the trivia id is null, this a new trivia id without a mySQL assigned
+	if($newTriviaId === null) {
+		$this->triviaId = null;
+		return;
+	}
 
-		//verify the trivial is positive
-		if($newTrivial <= 0) {
-				throw(new \RangeException("trivial is not positive"));
-		}
+	//verify the triviaId is positive
+	if($newTriviaId <= 0) {
+		throw(new \RangeException("triviaId is not positive"));
+	}
 
-		//convert and store the trivial
-	$this->trivial = $newTrivial;
+	//convert and store the triviaId
+	$this->triviaId = $newTriviaId;
 }
 
 /**
- * accessor method for trivial profile
+ * accessor method for triviaId profile
  *
  * @return int value of trivial
  **/
 
-	public function setquotes(int $quotes = null)
+public function setquotes(int $quotes = null)
 		//base case: if the quotes is null, this a new quotes without a mySQL assigned (yet)
 		if($newQuotes === null) {
 			$this->quotes = null;
@@ -207,8 +218,8 @@ class Movie {
 
 		//verify the quotes is positive
 		if($newQuotes <= 0) {
-				throw (new \RangeException("quotes is not positive"));
-	}
+			throw (new \RangeException("quotes is not positive"));
+		}
 
 	//convert and store the quotes
 	$this->quotes = $newQuotes;
@@ -216,10 +227,10 @@ class Movie {
 /**
  * accessor method for quotes method
  *
- *@return int value of quotes
+ * @return int value of quotes
  **/
 public function getQuotes() {
-	return($this->quotes);
+	return ($this->quotes);
 
 }
 
@@ -231,6 +242,26 @@ public function getQuotes() {
  * @throws \TypeError if $newQuotes is not an integer
  **/
 
+	public function setawards(int $awards = null)
+		//base case: if the awards is null, this a new awards without a mySQL assigned (yet)
+		if($newQuotes === null) {
+			$this->quotes = null;
+			return;
+		}
+
+		//verify the awards is positive
+		if($newAwards <= 0) {
+			throw (new \RangeException("awards is not positive"));
+		}
+
+	//convert and store the awards
+	$this->awards = $newAwards;
+	}
+
+/**accessor method for awards method
+ *
+ * @return int value of awards
+**/
 	public function getawards() {
 		return ($this->awards);
 
@@ -337,18 +368,6 @@ public function getcastCrew() {
  * @throws \TypeError if $newcastCrew is not an integer
  **/
 
-public function getMovieId() {
-			return($this->movieId);
-}
-
-/**
- * mutator method for movie id
- *
- * @param int|null $newMovieId new value of movie id
- * @throws \RangeException if $newMovieId is not positive
- * @throws \TypeError if $newMovieId is not an integer
- **/
-
 public function setMovieId(int $newMovieId = null) {
 	//base case: if the movie id is null, this a new movie id without a mySQL assigned
 	if($newMovieId === null) {
@@ -369,4 +388,16 @@ public function setMovieId(int $newMovieId = null) {
  * accessor method for movie id
  *
  * @return int value of movie id
+ **/
+
+public function getMovieId() {
+	return($this->movieId);
+}
+
+/**
+ * mutator method for movie id
+ *
+ * @param int|null $newMovieId new value of movie id
+ * @throws \RangeException if $newMovieId is not positive
+ * @throws \TypeError if $newMovieId is not an integer
  **/
